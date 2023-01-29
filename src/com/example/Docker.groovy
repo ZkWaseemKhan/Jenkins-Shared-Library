@@ -3,7 +3,6 @@ package com.example
 class Docker implements Serializable {
     def script
     Docker(script) {
-        echo "Calling docker class from global 2"
         this.script = script
     }
     def buildDockerImage(String imageName) {
