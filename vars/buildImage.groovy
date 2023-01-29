@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-package com.example.Docker
+import com.example.Docker
 def call(String imageName) {
     echo "This global file"
     return new Docker(this).buildDockerImage(imageName)
